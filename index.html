@@ -6,7 +6,7 @@
     <title>Goyu Ryu Karate | Mariefred</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- Dependancies -->
     <link
@@ -16,6 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header__main">
@@ -35,8 +38,13 @@
           </div>
         </a>
 
-        <nav>
-          <ul>
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <nav class="header__navbar menu">
+          <ul class="">
             <li><a href="/">Hem</a></li>
             <li><a href="/">Här finns vi</a></li>
             <li><a href="/">Vår verksamhet</a></li>
@@ -47,6 +55,7 @@
         </nav>
       </div>
     </header>
+
     <main>
       <!-- Hero -->
       <section class="hero">
