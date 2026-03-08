@@ -38,7 +38,6 @@ ul {
 
 section {
   background: inherit;
-  padding: 2rem 0;
 }
 
 section:nth-of-type(even) {
@@ -59,8 +58,9 @@ a {
 /* Util Classes */
 
 .wrapper {
-  max-width: min(1680px, 95%);
-  margin: 0 auto;
+  max-width: min(1680px, 100%);
+  margin: clamp(3rem, 6vw, 6rem) auto;
+  padding: 0 1rem;
 }
 
 .flex-between {
