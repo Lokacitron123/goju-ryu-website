@@ -416,9 +416,9 @@ a {
   object-fit: contain;
 }
 
-.footer__brand {
+.footer__logo-title {
   font-weight: bold;
-  font-size: clamp(1.5rem, 1.2rem, 1rem);
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
 }
 
 .footer__description {
@@ -568,7 +568,6 @@ a {
   cursor: pointer;
 }
 
-/* Main CTA — gradient background */
 .cta-main {
   border-radius: 12px;
   background: var(--gradient-primary);
@@ -576,7 +575,6 @@ a {
   border: none;
 }
 
-/* Optional hover effect */
 .cta-main:hover {
   filter: brightness(1.1);
 }
