@@ -59,7 +59,8 @@ a {
 
 .wrapper {
   max-width: min(1680px, 100%);
-  margin: clamp(3rem, 6vw, 6rem) auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 1rem;
 }
 
@@ -100,7 +101,7 @@ a {
 }
 
 .header__logo-title {
-  font-size: clamp(1rem 2vw, 2rem);
+  font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
 /* Hero Section */
@@ -179,6 +180,7 @@ a {
 /* What we offer section */
 
 .training {
+  margin-top: clamp(3rem, 6vw, 6rem);
 }
 
 .training__title {
@@ -214,6 +216,7 @@ a {
 /* Why Train with Us Section */
 
 .why-train {
+  margin-top: clamp(3rem, 6vw, 6rem);
 }
 
 .why-train__title {
@@ -278,6 +281,7 @@ a {
 /* Social Proof Section */
 
 .social-proof {
+  margin-top: clamp(3rem, 6vw, 6rem);
   width: 100%;
 }
 
@@ -333,12 +337,16 @@ a {
 /* About section */
 
 .about {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  margin-top: clamp(3rem, 6vw, 6rem);
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
   p {
     max-width: 500px;
@@ -349,6 +357,7 @@ a {
 /* Where to find */
 
 .where {
+  margin-top: clamp(3rem, 6vw, 6rem);
   width: 100%;
 }
 
@@ -364,6 +373,12 @@ a {
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
   }
+}
+
+/* CTA Section */
+
+.cta-section {
+  margin-top: clamp(3rem, 6vw, 6rem);
 }
 
 /* Footer */
