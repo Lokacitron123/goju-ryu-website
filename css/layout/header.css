@@ -1,0 +1,27 @@
+/* Header */
+
+.header__main {
+  position: sticky; /* or fixed if you prefer */
+  top: 0;
+  z-index: 10;
+  background-color: inherit;
+
+  padding: 1rem;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1 / 1;
+}
+
+.header__logo-title {
+  font-size: clamp(1.2rem, 2vw, 3rem);
+}

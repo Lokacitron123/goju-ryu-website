@@ -1,0 +1,41 @@
+/* Buttons */
+
+/* CTA Buttons */
+
+.cta {
+  padding: 1rem;
+  min-width: 150px;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-main {
+  border-radius: 12px;
+  background: var(--gradient-primary);
+  color: var(--color-surface);
+  border: none;
+}
+
+.cta-main:hover {
+  filter: brightness(1.1);
+}
+
+.cta-second {
+  border-radius: 12px;
+  border: 3px solid transparent;
+
+  background:
+    linear-gradient(white, white) padding-box,
+    var(--gradient-primary) border-box;
+  color: var(--color-primary);
+}
+
+.cta-second:hover {
+  filter: brightness(1.1);
+}

@@ -1,0 +1,13 @@
+.section-title {
+  margin-bottom: 1rem;
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  width: clamp(6px, 1vw, 12px);
+  height: clamp(6px, 1vw, 12px);
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-left: 0.25rem;
+}

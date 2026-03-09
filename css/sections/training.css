@@ -1,0 +1,34 @@
+/* What we offer section */
+
+.training {
+}
+
+.training__title {
+  margin-bottom: 1rem;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: clamp(6px, 1vw, 12px);
+    height: clamp(6px, 1vw, 12px);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    margin-left: 0.25rem;
+  }
+}
+
+.training__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: min(3rem, 1.5rem);
+}
+
+@media (max-width: 768px) {
+  .training__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.training__description {
+}

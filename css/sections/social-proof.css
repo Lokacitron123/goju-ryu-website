@@ -1,0 +1,54 @@
+/* Social Proof Section */
+
+.social-proof {
+  width: 100%;
+}
+
+.social-proof__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .social-proof__grid {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
+
+.social-proof__grid-item {
+  img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  i {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+    float: left; /* floats icon to the left of the text */
+    font-size: 2rem; /* adjust size as needed */
+    line-height: 1; /* prevents extra vertical space */
+    margin-right: 1rem; /* space between icon and text */
+    margin-top: 0.25rem; /* optional: align visually with text */
+    color: var(--color-primary);
+  }
+}
+
+.social-proof__content {
+  margin-top: 1rem;
+  max-width: 480px;
+}
+
+.social-proof__description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.social-proof__img-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

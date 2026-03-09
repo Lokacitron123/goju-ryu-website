@@ -1,3 +1,21 @@
-@import "./variables.css";
+@import "./base/reset.css";
+@import "./base/variables.css";
+@import "./base/base.css";
+
+@import "./layout/wrapper.css";
+@import "./layout/header.css";
+@import "./layout/footer.css";
+
+@import "./sections/hero.css";
+@import "./sections/training.css";
+@import "./sections/why-train.css";
+@import "./sections/social-proof.css";
+@import "./sections/about.css";
+@import "./sections/where.css";
+
+@import "./components/card.css";
+@import "./components/buttons.css";
 @import "./components/navbar.css";
-@import "./pages/index.css";
+@import "./components/titles.css";
+
+@import "./utilities/utils.css";
