@@ -9,9 +9,10 @@ body {
 
 body {
   min-height: 100dvh;
-  background-color: var(--color-bg-main);
-
+  background: var(--color-bg-main);
   font-size: var(--text-base);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -43,4 +44,18 @@ h6,
 p,
 a {
   color: var(--color-text-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+label,
+textarea {
+  font: inherit;
 }

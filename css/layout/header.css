@@ -23,5 +23,5 @@
 }
 
 .header__logo-title {
-  font-size: clamp(1.2rem, 2vw, 3rem);
+  font-size: var(--text-lg);
 }
