@@ -1,7 +1,17 @@
+/* Text */
+
+.section-title-white {
+  color: var(--color-surface);
+}
+
 /* Margin and paddings */
 
 .section-mt {
   margin-top: clamp(3rem, 6vw, 6rem);
+}
+
+.space {
+  padding: var(--space-8) 0;
 }
 
 /* Flex */
@@ -33,6 +43,19 @@
 
 /* Grid */
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,4 +67,8 @@
     grid-template-columns: 1fr;
     place-items: center;
   }
+}
+
+.reverse {
+  order: 1;
 }

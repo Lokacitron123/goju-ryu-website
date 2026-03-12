@@ -16,6 +16,7 @@
   object-fit: cover;
 
   opacity: 0.75;
+  filter: grayscale(1);
 }
 
 .hero__content {

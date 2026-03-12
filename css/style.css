@@ -12,6 +12,7 @@
 @import "./sections/social-proof.css";
 @import "./sections/about.css";
 @import "./sections/where.css";
+@import "./sections/map.css";
 
 @import "./components/card.css";
 @import "./components/buttons.css";

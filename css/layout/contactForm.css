@@ -23,6 +23,10 @@
 
 .contact__description {
   margin-bottom: 0.8rem;
+
+  a {
+    font-weight: 500;
+  }
 }
 
 .contact__form {
@@ -46,6 +50,7 @@
 }
 
 .contact__textarea {
+  resize: none;
 }
 
 .contact__input,

@@ -1,0 +1,64 @@
+.location {
+}
+
+.location__header {
+  margin-bottom: 1rem;
+}
+
+.location__title {
+}
+
+.location__subtitle {
+}
+
+.location__content,
+.location__maps {
+  padding: 0 4rem;
+}
+
+.location__term-notice {
+  margin-bottom: 1rem;
+}
+
+.location__schedule {
+}
+
+.schedule__block {
+  margin-bottom: 2rem;
+}
+
+.schedule__venue {
+  margin-bottom: 1rem;
+}
+
+.schedule__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.schedule__item {
+  padding-left: 1rem;
+}
+
+.location__block {
+}
+
+.location__maps {
+}
+
+.map {
+  width: 100%;
+}
+
+.map__label {
+  margin-bottom: 1rem;
+}
+
+.map__address {
+  margin-bottom: 2rem;
+}
+
+.map__embed {
+  width: 100%;
+}
