@@ -31,6 +31,8 @@ ul {
 
 section {
   background: inherit;
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
 }
 
 section:nth-of-type(even) {

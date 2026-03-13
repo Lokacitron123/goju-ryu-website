@@ -11,9 +11,12 @@
 .location__subtitle {
 }
 
-.location__content,
+.location__content {
+}
 .location__maps {
-  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
 }
 
 .location__term-notice {
@@ -38,7 +41,6 @@
 }
 
 .schedule__item {
-  padding-left: 1rem;
 }
 
 .location__block {
