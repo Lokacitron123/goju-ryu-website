@@ -3,7 +3,7 @@
 .footer {
   background-color: var(--color-white); /* off-white / eggshell */
   color: var(--color-black);
-  padding-bottom: 1rem;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
 }
