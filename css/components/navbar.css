@@ -65,10 +65,12 @@
   }
   .menu li {
     width: 100%;
+    display: flex;
   }
   .menu a {
     padding: 15px 25px;
-    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 
