@@ -29,11 +29,6 @@
   opacity: 0.9;
 }
 
-.menu li:first-child a {
-  color: var(--color-primary);
-  opacity: 1;
-}
-
 .menu ul {
   display: flex;
   gap: 1rem;
