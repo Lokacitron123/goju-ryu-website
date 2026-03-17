@@ -5,6 +5,9 @@
 @import "./layout/wrapper.css";
 @import "./layout/header.css";
 @import "./layout/footer.css";
+@import "./layout/split-layout.css";
+@import "./layout/content-block.css";
+@import "./layout//grid-layout.css";
 
 @import "./sections/hero.css";
 @import "./sections/training.css";
