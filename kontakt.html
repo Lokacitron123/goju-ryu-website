@@ -78,22 +78,28 @@
           <form class="contact__form section-mt" action="">
             <div class="contact__group">
               <label class="contact__label" for="name">Namn</label>
-              <input
-                class="contact__input"
-                type="text"
-                placeholder="Skriv in ditt namn"
-                required
-              />
+              <div class="contact__input-container">
+                <i class="fa-regular fa-user"></i>
+                <input
+                  class="contact__input"
+                  type="text"
+                  placeholder="Skriv in ditt namn"
+                  required
+                />
+              </div>
             </div>
 
             <div class="contact__group">
               <label class="contact__label" for="email">E-post</label>
-              <input
-                class="contact__input"
-                type="text"
-                placeholder="Skriv in din e-postadress"
-                required
-              />
+              <div class="contact__input-container">
+                <i class="fa-regular fa-envelope"></i>
+                <input
+                  class="contact__input"
+                  type="text"
+                  placeholder="Skriv in din e-postadress"
+                  required
+                />
+              </div>
             </div>
 
             <div class="contact__group">
@@ -323,14 +329,20 @@
                 <h3 class="split-layout__subtitle">Lund kontaktinformation</h3>
                 <ul class="split-layout__list">
                   <li class="split-layout__listitem">
-                    Email:
-                    <a href="mailto:j.m.andersson@gmail.com"></a
-                    >j.m.andersson@gmail.com
-                  </li>
-                  <li class="split-layout__listitem">
-                    https://gojuryulund.se/
+                    <span class="icon"
+                      ><i class="fa-regular fa-envelope"></i
+                    ></span>
+                    <a href="mailto:j.m.andersson@gmail.com"></a>
+                    j.m.andersson@gmail.com
                   </li>
                 </ul>
+                <br />
+                <a
+                  href="https://gojuryulund.se/"
+                  class="cta cta-main cta-fit"
+                  target="_blank"
+                  >Besök Lunds hemsida</a
+                >
               </div>
             </div>
 

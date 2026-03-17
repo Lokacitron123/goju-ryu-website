@@ -19,5 +19,6 @@
 @import "./components/navbar.css";
 @import "./components/titles.css";
 @import "./components/contactForm.css";
+@import "./components/icons.css";
 
 @import "./utilities/utils.css";

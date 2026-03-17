@@ -21,10 +21,6 @@
 
 .contact__description {
   margin-bottom: 0.8rem;
-
-  a {
-    font-weight: 500;
-  }
 }
 
 .contact__form {
@@ -39,6 +35,28 @@
 .contact__group {
   display: flex;
   flex-direction: column;
+}
+
+.contact__label {
+  margin-bottom: 0.5rem;
+}
+
+.contact__input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    padding-left: 40px;
+  }
+
+  i {
+    position: absolute;
+    left: 12px;
+    color: #666;
+    pointer-events: none;
+    z-index: 1;
+  }
 }
 
 .contact__textarea {
