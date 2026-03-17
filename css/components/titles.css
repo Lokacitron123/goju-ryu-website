@@ -1,6 +1,7 @@
 .section-title {
   font-size: var(--text-xl);
-  margin-bottom: 1rem;
+  font-weight: 500;
+  padding: 3rem 0;
 }
 
 .section-title::after {
@@ -15,4 +16,8 @@
 
 .subtitle {
   font-size: var(--text-lg);
+}
+
+.section-title-black {
+  color: var(--color-text-main);
 }

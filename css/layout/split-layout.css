@@ -11,7 +11,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  padding-top: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -28,7 +27,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* Optional: adds slight rounding if desired */
+  border-radius: 8px;
 }
 
 .split-layout__text {
@@ -37,7 +36,6 @@
   gap: 1rem;
 }
 
-/* Optional: Push the CTA button to the bottom if using flex-grow on parent */
 .split-layout__text a:last-child {
   margin-top: auto;
 }

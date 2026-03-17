@@ -20,7 +20,7 @@
 }
 
 .hero__content {
-  position: relative; /* stacks above image */
+  position: relative;
   z-index: 1;
 
   height: 100%;
@@ -32,9 +32,6 @@
   gap: 1.5rem;
 
   padding-top: clamp(1rem, 5vw, 5rem);
-  /* padding-bottom: clamp(1rem, 5vw, 5rem);
-  padding-left: clamp(1rem, 5vw, 10rem);
-  padding-right: clamp(1rem, 5vw, 10rem); */
 }
 
 @media (max-width: 768px) {
