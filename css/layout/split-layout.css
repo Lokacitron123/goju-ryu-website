@@ -1,0 +1,77 @@
+/* layout/split-layout.css */
+
+.split-layout {
+  /* No specific styles needed on the section itself usually, 
+     but good for spacing if needed */
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+}
+
+.split-layout__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .split-layout__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.split-layout__media {
+  width: 100%;
+}
+
+.split-layout__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional: adds slight rounding if desired */
+}
+
+.split-layout__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Optional: Push the CTA button to the bottom if using flex-grow on parent */
+.split-layout__text a:last-child {
+  margin-top: auto;
+}
+
+.split-layout__subtitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.split-layout__description {
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text-main);
+}
+
+.split-layout__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.split-layout__listitem {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: var(--text-base);
+}
+
+.split-layout__listitem::before {
+  content: "•";
+  color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
