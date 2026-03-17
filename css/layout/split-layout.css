@@ -48,8 +48,8 @@
 
 .split-layout__description {
   font-size: var(--text-base);
-  line-height: 1.6;
   color: var(--color-text-main);
+  margin-bottom: 0.5rem;
 }
 
 .split-layout__list {

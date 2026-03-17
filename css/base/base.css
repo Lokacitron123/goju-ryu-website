@@ -50,6 +50,10 @@ a {
   color: var(--color-text-main);
 }
 
+p {
+  line-height: 2;
+}
+
 h1,
 h2,
 h3,
