@@ -21,3 +21,7 @@
 .section-title-black {
   color: var(--color-text-main);
 }
+
+.section-title-white {
+  color: var(--color-surface);
+}
