@@ -1,8 +1,5 @@
-/* Header */
-
 .header__main {
-  position: sticky; /* or fixed if you prefer */
-  top: 0;
+  position: sticky;
   z-index: 10;
   background-color: inherit;
 
@@ -13,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(0.5rem, 0.75rem + 0.1vw, 1rem);
 }
 
 .header__logo {
