@@ -34,6 +34,14 @@
   padding-top: clamp(1rem, 5vw, 5rem);
 }
 
+.hero__desc-container {
+  max-width: 600px;
+  display: grid;
+  gap: 1rem;
+
+  text-wrap: wrap;
+}
+
 @media (max-width: 768px) {
   .hero__content {
     justify-content: center;

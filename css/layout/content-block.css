@@ -2,18 +2,20 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1.5rem;
-  padding: var(--space-8) 0;
+  gap: 1rem;
+  padding: var(--space-2) 0;
+}
+
+.content-block__text-container {
+  max-width: 600px;
+  font-size: var(--text-base);
+  color: var(--color-text-main);
 }
 
 .content-block__text {
-  max-width: 600px;
-  font-size: var(--text-base);
-  line-height: 1.6;
-  color: var(--color-text-main);
-  padding: 3rem 0;
 }
 
 /* For aligning text left */
