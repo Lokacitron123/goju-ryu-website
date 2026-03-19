@@ -1,8 +1,9 @@
 /* CTA Buttons */
 
 .cta {
-  padding: 1rem;
-  min-width: 150px;
+  padding: 0.5rem 1rem;
+  min-width: 250px;
+  width: fit-content;
 
   text-align: center;
   text-decoration: none;
