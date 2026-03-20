@@ -1,6 +1,7 @@
 .section-title {
   font-size: var(--text-xl);
   font-weight: 500;
+  line-height: var(--leading-tight);
   margin-bottom: 3rem;
 }
 
@@ -14,14 +15,14 @@
   margin-left: 0.25rem;
 }
 
-.subtitle {
-  font-size: var(--text-lg);
-}
-
-.section-title-black {
+.section-title--black {
   color: var(--color-text-main);
 }
 
-.section-title-white {
+.section-title--white {
   color: var(--color-surface);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
 }

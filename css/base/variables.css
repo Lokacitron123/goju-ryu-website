@@ -30,6 +30,12 @@
   /* Optional subtle Japanese ink tone */
   --color-ink: #2b2b2b;
 
+  /* Typography */
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --tracking-wide: 0.02em;
+
   /* SPACING UNITS */
 
   --space-1: 0.25rem; /* 4px */

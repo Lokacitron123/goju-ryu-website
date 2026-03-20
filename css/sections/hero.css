@@ -34,14 +34,6 @@
   padding-top: clamp(1rem, 5vw, 5rem);
 }
 
-.hero__desc-container {
-  max-width: 600px;
-  display: grid;
-  gap: 1rem;
-
-  text-wrap: wrap;
-}
-
 @media (max-width: 768px) {
   .hero__content {
     justify-content: center;
@@ -50,8 +42,13 @@
   }
 }
 
+.hero__title-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
 .hero__title {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: var(--text-3xl);
 
   &::after {
     content: "";
@@ -65,11 +62,18 @@
 }
 
 .hero__subtitle {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: var(--text-lg);
+}
+
+.hero__desc-container {
+  display: grid;
+  gap: 1rem;
 }
 
 .hero__description {
   font-size: 1rem;
+  max-width: 600px;
+  text-wrap: wrap;
 }
 
 .hero__cta-container {

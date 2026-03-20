@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goju Ryu Karate | Information för medlemmar</title>
+    <title>Goyu Ryu Karate | Viktiga Dokument</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -41,13 +41,44 @@
           </div>
         </a>
 
-        <button class="menu-toggle">
+        <button
+          class="menu-toggle"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          aria-controls="header__navbar"
+        >
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-xmark"></i>
         </button>
 
         <nav class="header__navbar menu">
           <ul class="header__navbar-list">
+            <li
+              class="header__navbar-listitem header__navbar-listitem--has-submenu"
+            >
+              <a
+                class="header__navbar-link header__navbar-toggle"
+                href="#"
+                aria-haspopup="true"
+              >
+                Träning
+                <span class="header__arrow" aria-hidden="true">▼</span>
+              </a>
+              <ul class="header__submenu">
+                <li class="header__navbar-listitem header__submenu-item">
+                  <a class="header__submenu-link" href="./karate.html"
+                    >Karate</a
+                  >
+                </li>
+                <li class="header__submenu-item">
+                  <a class="header__submenu-link" href="./arnis.html">Arnis</a>
+                </li>
+                <li class="header__submenu-item">
+                  <a class="header__submenu-link" href="./yoga.html">Yoga</a>
+                </li>
+              </ul>
+            </li>
+
             <li class="header__navbar-listitem">
               <a class="header__navbar-link" href="./index.html">Hem</a>
             </li>
@@ -66,13 +97,82 @@
               >
             </li>
             <li class="header__navbar-listitem">
+              <a class="header__navbar-link" href="./dokument.html">Dokument</a>
+            </li>
+            <li class="header__navbar-listitem">
               <a class="header__navbar-link" href="./kontakt.html">Kontakt</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main></main>
+
+    <main class="">
+      <section class="library wrapper">
+        <div class="container">
+          <header class="library__header">
+            <h2 class="section-title library__title">
+              Nedladdningar & Dokument
+            </h2>
+            <p class="library__intro">
+              Viktiga dokument för vår karateklubb. Ladda ner PDF-filer här.
+            </p>
+          </header>
+
+          <div class="library__grid">
+            <!-- Card 1 -->
+            <article class="doc-card">
+              <div class="doc-card__icon">
+                <!-- SVG Icon for PDF -->
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                  ...
+                </svg>
+              </div>
+              <div class="doc-card__body">
+                <h3 class="doc-card__title">Medlemsansökan 2024</h3>
+                <p class="doc-card__desc">
+                  Uppdaterad ansökningsblankett för nya medlemmar.
+                </p>
+                <span class="doc-card__meta">PDF • 245 KB</span>
+              </div>
+              <a
+                href="/files/medlemsansokan.pdf"
+                class="doc-card__btn cta cta--primary"
+                download
+              >
+                Ladda ner
+              </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="doc-card">
+              <div class="doc-card__icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                  ...
+                </svg>
+              </div>
+              <div class="doc-card__body">
+                <h3 class="doc-card__title">Regler och Riktlinjer</h3>
+                <p class="doc-card__desc">
+                  Våra interna regler för träning och tävling.
+                </p>
+                <span class="doc-card__meta">PDF • 1.2 MB</span>
+              </div>
+              <a
+                href="/files/regler.pdf"
+                class="doc-card__btn cta cta--secondary"
+                download
+              >
+                Ladda ner
+              </a>
+            </article>
+
+            <!-- Add more cards as needed -->
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="footer__wrapper wrapper">
         <div class="footer__column footer__column--about">

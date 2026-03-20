@@ -1,0 +1,67 @@
+.library {
+  padding: var(--space-8) var(--container-padding);
+  background-color: var(--color-bg-main);
+}
+
+.library__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.doc-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(
+    --radius-md,
+    8px
+  ); /* You might want to add this variable */
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.doc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: var(--color-primary);
+}
+
+.doc-card__icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.doc-card__title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-2);
+  line-height: var(--leading-tight);
+}
+
+.doc-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+  flex-grow: 1; /* Pushes meta/button to bottom */
+}
+
+.doc-card__meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-soft);
+  font-style: italic;
+  margin-bottom: var(--space-4);
+}
+
+.doc-card__btn {
+  align-self: stretch;
+  text-align: center;
+  /* Inherits .cta styles but ensures full width */
+}
