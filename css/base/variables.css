@@ -1,43 +1,92 @@
-:root {
-  /* ===== Brand ===== */
+/* base/variables.css */
 
-  /* Rising sun inspired red */
+:root {
+  /* =========================================
+     BRAND COLORS (Rising Sun Theme)
+     ========================================= */
+
+  /* Primary Red */
   --color-primary: #c1121f;
   --color-primary-light: #ff4d4d;
   --color-primary-dark: #8b0e18;
 
+  /* Semantic Aliases for flexibility */
+  --color-accent: var(--color-primary);
+  --color-accent-hover: var(--color-primary-dark);
+  --color-accent-light: var(--color-primary-light);
+
+  /* Gradients */
   --gradient-primary: linear-gradient(
     135deg,
     var(--color-primary-light),
     var(--color-primary)
   );
+  --gradient-subtle: linear-gradient(
+    180deg,
+    var(--color-bg-soft),
+    var(--color-bg-main)
+  );
 
-  /* ===== Neutrals ===== */
+  /* =========================================
+     NEUTRALS (Gi Inspired)
+     ========================================= */
 
-  /* Gi inspired whites */
-  --color-bg-main: #f8f6f2; /* eggshell white (main page background) */
-  --color-bg-soft: #f1eee8; /* subtle section backgrounds */
-  --color-surface: #eeeae3; /* cards */
+  /* Backgrounds */
+  --color-bg-main: #f8f6f2; /* Eggshell white (Main page) */
+  --color-bg-soft: #f1eee8; /* Section backgrounds */
+  --color-surface: #eeeae3; /* Cards, modals */
+  --color-surface-hover: #e4e0d8; /* Interactive surface states */
 
-  /* Text colors (not pure black) */
+  /* Text Colors */
   --color-text-main: #1a1a1a;
   --color-text-muted: #555555;
   --color-text-soft: #777777;
+  --color-text-inverse: #ffffff; /* For text on primary red */
 
-  /* Borders */
+  /* Borders & Dividers */
   --color-border: #e4e0d8;
+  --color-border-strong: #d1cdc4;
 
-  /* Optional subtle Japanese ink tone */
+  /* Ink Tone (Subtle Japanese aesthetic) */
   --color-ink: #2b2b2b;
 
-  /* Typography */
+  /* =========================================
+     TYPOGRAPHY
+     ========================================= */
 
+  /* Font Families */
+  --font-sans:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif; /* Optional for headings */
+  --font-mono:
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+
+  /* Base Settings */
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --letter-spacing-base: 0.02em;
+
+  /* Font Scale (Clamped for responsiveness) */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
+  --text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-xl: clamp(1.75rem, 1.3rem + 0.8vw, 2rem);
+  --text-2xl: clamp(2rem, 1.7rem + 1vw, 2.5rem);
+  --text-3xl: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+  --text-4xl: clamp(3rem, 2.5rem + 3vw, 4.5rem); /* Added for Hero titles */
+
+  /* Line Heights */
   --leading-tight: 1.2;
   --leading-normal: 1.5;
-  --tracking-wide: 0.02em;
+  --leading-relaxed: 1.75;
 
-  /* SPACING UNITS */
+  /* =========================================
+     SPACING & LAYOUT
+     ========================================= */
 
+  /* Spacing Units (4px base) */
   --space-1: 0.25rem; /* 4px */
   --space-2: 0.5rem; /* 8px */
   --space-3: 0.75rem; /* 12px */
@@ -49,17 +98,33 @@
   --space-9: 5rem; /* 80px */
   --space-10: 6rem; /* 96px */
 
-  /* Padding */
-
+  /* Container & Layout */
+  --container-max: 1200px;
   --container-padding: clamp(1rem, 4vw, 3rem);
 
-  /* FONT SCALE */
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
 
-  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem);
-  --text-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
-  --text-base: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
-  --text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
-  --text-xl: clamp(1.75rem, 1.3rem + 0.8vw, 2rem);
-  --text-2xl: clamp(2rem, 1.7rem + 1vw, 2.5rem);
-  --text-3xl: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+  /* Shadows (Subtle, paper-like) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-Index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-tooltip: 400;
+  --z-toast: 500;
 }

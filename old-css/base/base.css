@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+
+  font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--color-bg-main);
+  font-size: var(--text-base);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  background: inherit;
+  padding-top: min(var(--space-10), 8%);
+  padding-bottom: min(var(--space-10), 8%);
+}
+
+section:nth-of-type(even) {
+  background: var(--color-bg-soft);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: var(--color-text-main);
+}
+
+p {
+  line-height: 1.6; /* 1.5–1.8 is the sweet spot for body text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+label,
+textarea {
+  font: inherit;
+}

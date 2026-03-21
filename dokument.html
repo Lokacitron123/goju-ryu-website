@@ -28,8 +28,8 @@
     <script src="script.js" defer></script>
   </head>
   <body class="">
-    <header class="header__main">
-      <div class="wrapper flex-between">
+    <header class="header">
+      <div class="header__container">
         <a href="./index.html">
           <div class="header__logo-container">
             <img
@@ -41,66 +41,30 @@
           </div>
         </a>
 
-        <button
-          class="menu-toggle"
-          aria-label="Öppna meny"
-          aria-expanded="false"
-          aria-controls="header__navbar"
-        >
+        <button class="nav__mobile-toggle">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-xmark"></i>
         </button>
 
-        <nav class="header__navbar menu">
-          <ul class="header__navbar-list">
-            <li
-              class="header__navbar-listitem header__navbar-listitem--has-submenu"
-            >
-              <a
-                class="header__navbar-link header__navbar-toggle"
-                href="#"
-                aria-haspopup="true"
-              >
-                Träning
-                <span class="header__arrow" aria-hidden="true">▼</span>
-              </a>
-              <ul class="header__submenu">
-                <li class="header__navbar-listitem header__submenu-item">
-                  <a class="header__submenu-link" href="./karate.html"
-                    >Karate</a
-                  >
-                </li>
-                <li class="header__submenu-item">
-                  <a class="header__submenu-link" href="./arnis.html">Arnis</a>
-                </li>
-                <li class="header__submenu-item">
-                  <a class="header__submenu-link" href="./yoga.html">Yoga</a>
-                </li>
-              </ul>
+        <nav class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="./index.html">Hem</a>
             </li>
-
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./index.html">Hem</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./om-oss.html">Om Oss</a>
             </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./om-oss.html">Om Oss</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./traning.html">Träning</a>
             </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./traning.html">Träning</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./schema.html">Schema</a>
             </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./schema.html">Schema</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./for-medlemmar.html">För Medlemmar</a>
             </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./for-medlemmar.html"
-                >För Medlemmar</a
-              >
-            </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./dokument.html">Dokument</a>
-            </li>
-            <li class="header__navbar-listitem">
-              <a class="header__navbar-link" href="./kontakt.html">Kontakt</a>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./kontakt.html">Kontakt</a>
             </li>
           </ul>
         </nav>
