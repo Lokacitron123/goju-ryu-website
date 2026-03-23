@@ -1,0 +1,42 @@
+/* Card Component */
+
+.card {
+  width: min(480px, 95%);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+}
+
+.card__image-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card__image {
+  transform: scale(1.1);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.3rem, 1.5rem);
+  padding: 1rem;
+}
+
+.card__title {
+  font-size: var(--text-lg);
+}
+
+.card__description {
+  font-size: var(--text-base);
+}

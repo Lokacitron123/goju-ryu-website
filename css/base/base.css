@@ -1,36 +1,16 @@
-/* ============================================
-   CSS RESET 
-   ============================================ */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
-  line-height: 1.15;
+  scroll-behavior: smooth;
+
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   min-height: 100vh;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222;
-  background-color: #fff;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
 }
 
 ul,
@@ -41,10 +21,6 @@ ol {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 img {

@@ -15,4 +15,8 @@
   .grid-layout {
     grid-template-columns: 1fr;
   }
+
+  .grid-layout__item {
+    margin-inline: auto;
+  }
 }

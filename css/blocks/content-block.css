@@ -1,0 +1,25 @@
+.content-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: var(--space-2) 0;
+}
+
+.content-block__text-container {
+  max-width: 600px;
+  font-size: var(--text-base);
+  color: var(--color-text-main);
+}
+
+.content-block__text {
+}
+
+/* For aligning text left */
+.content-block--left {
+  align-items: flex-start;
+  text-align: left;
+}

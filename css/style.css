@@ -11,3 +11,12 @@
 @import "./blocks/hero.css";
 @import "./blocks/carousel.css";
 @import "./blocks/button.css";
+@import "./blocks/social-proof.css";
+@import "./blocks/content-block.css";
+@import "./blocks/footer.css";
+
+/* Layout */
+@import "./layout/section.css";
+@import "./layout/container.css";
+@import "./layout/grid-layout.css";
+@import "./layout/split-layout.css";

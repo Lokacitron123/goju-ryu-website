@@ -11,7 +11,10 @@
 .nav__list-item {
 }
 
-.nav__link {
+.nav__link:hover,
+.nav__link.active {
+  background-color: var(--color-bg-soft);
+  color: var(--color-primary);
 }
 
 /* Mobile toggle CSS */
@@ -96,12 +99,6 @@
     width: 100%;
     text-align: center;
     border-radius: var(--radius-md);
-  }
-
-  .nav__link:hover,
-  .nav__link.active {
-    background-color: var(--color-bg-soft);
-    color: var(--color-primary);
   }
 }
 

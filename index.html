@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goyu Ryu Karate | Hem</title>
+    <title>Goju Ryu Karate | Hem</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -74,7 +74,7 @@
     <main class="">
       <!-- Hero -->
       <section class="hero">
-        <div class="hero__media">
+        <div class="hero__media-container">
           <img
             class="hero__image"
             src="./images/karate.jpg"
@@ -82,31 +82,38 @@
           />
         </div>
 
-        <div class="hero__content wrapper">
-          <div class="hero__title_container">
-            <h1 class="hero__title">Goju Ryu Karate</h1>
-            <h2 class="hero__subtitle">Kampkonst & Livsfilosofi</h2>
-          </div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__title_container">
+              <h1 class="hero__title">Goju Ryu Karate</h1>
+              <h2 class="hero__subtitle">Kampkonst & Livsfilosofi</h2>
+            </div>
 
-          <p class="hero__description">
-            Träning för kropp, sinne och själ, välkommen att träna med oss.
-          </p>
-          <p></p>
-          <div class="hero__cta-container">
-            <a class="cta cta-main" href="./kontakt.html">Kontakta oss</a>
-            <a class="cta cta-second" href="./om-oss.html">Om oss</a>
+            <div class="hero__desc-container">
+              <p class="hero__description">
+                Träning för <span class="hero__desc-highlight">kropp</span>,
+                <span class="hero__desc-highlight">själ</span> och
+                <span class="hero__desc-highlight">sinne</span>, välkommen att
+                träna med oss.
+              </p>
+            </div>
+
+            <div class="hero__cta-container">
+              <a class="cta cta-main" href="./kontakt.html">Kontakta oss</a>
+              <a class="cta cta-second" href="./om-oss.html">Om oss</a>
+            </div>
           </div>
         </div>
       </section>
 
-      What we offer
-      <section class="training">
-        <div class="wrapper">
-          <h2 class="section-title">Vad vi erbjuder</h2>
+      <!-- Training we offer -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Vad vi erbjuder</h2>
 
-          <div class="grid-layout training__container">
+          <div class="grid-layout">
             <!-- Karate -->
-            <a href="./traning.html#karate" class="grid-layout__item card">
+            <a href="./traning.html#karate" class="card grid-layout__item">
               <div class="card__image-wrapper">
                 <img
                   src="./images/karate.jpg"
@@ -125,7 +132,7 @@
             </a>
 
             <!-- Arnis -->
-            <a href="./traning.html#arnis" class="grid-layout__item card">
+            <a href="./traning.html#arnis" class="card grid-layout__item">
               <div class="card__image-wrapper">
                 <img
                   src="./images/karate.jpg"
@@ -144,7 +151,7 @@
             </a>
 
             <!-- Yoga -->
-            <a href="./traning.html#yoga" class="grid-layout__item card">
+            <a href="./traning.html#yoga" class="card grid-layout__item">
               <div class="card__image-wrapper">
                 <img
                   src="./images/karate.jpg"
@@ -166,11 +173,11 @@
       </section>
 
       <!--Why train with us -->
-      <section class="split-layout">
-        <div class="wrapper">
-          <h2 class="section-title">Varför träna med oss</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Varför träna med oss</h2>
 
-          <div class="split-layout__grid">
+          <div class="split-layout">
             <div class="split-layout__media">
               <img
                 class="split-layout__image"
@@ -179,10 +186,8 @@
               />
             </div>
 
-            <div class="split-layout__text">
-              <h3 class="split-layout__subtitle">
-                Karate – mer än bara träning
-              </h3>
+            <div class="split-layout__content">
+              <h3 class="split-layout__title">Karate – mer än bara träning</h3>
 
               <p class="split-layout__description">
                 Goju Ryu Karate är en traditionell kampkonst från Okinawa som
@@ -222,9 +227,9 @@
       </section>
 
       <!-- Social proof -->
-      <section class="social-proof">
-        <div class="wrapper">
-          <h2 class="section-title">Vad våra medlemmar tycker</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Vad våra medlemmar tycker</h2>
 
           <div class="grid-layout">
             <!-- First Testimony -->
@@ -234,17 +239,17 @@
                   src="./images/placeholder-person.jpg"
                   alt="placeholder avatar"
                 />
-                <p class="social-proof__author">Lorem Ipsum</p>
+                <p class="social-proof__author">John Doe</p>
               </div>
               <div class="social-proof__content">
                 <p class="social-proof__description">
                   <span>
                     <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
                   </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  labore aliquid adipisci vitae mollitia consequatur facere
-                  quibusdam aperiam possimus amet officia atque totam, beatae
-                  nemo.
+                  "Som förälder var jag osäker på om min dotter skulle trivas,
+                  men hon älskar det här stället! Tränarna är tålmodiga och
+                  skapar en trygg miljö där alla känner sig välkomna. Vi ser
+                  redan skillnad i hennes självförtroende och disciplin."
                 </p>
               </div>
             </article>
@@ -256,17 +261,17 @@
                   src="./images/placeholder-person.jpg"
                   alt="placeholder avatar"
                 />
-                <p class="social-proof__author">Lorem Ipsum</p>
+                <p class="social-proof__author">Jane Doe</p>
               </div>
               <div class="social-proof__content">
                 <p class="social-proof__description">
                   <span>
                     <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
                   </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  labore aliquid adipisci vitae mollitia consequatur facere
-                  quibusdam aperiam possimus amet officia atque totam, beatae
-                  nemo.
+                  "Jag började vid 35 års ålder utan någon tidigare erfarenhet.
+                  Det kändes skrämmande i början, men gruppen är så välkomnande.
+                  Nu tränar jag regelbundet och har fått en helt ny hobby som
+                  både stärker kroppen och sinnet."
                 </p>
               </div>
             </article>
@@ -278,17 +283,17 @@
                   src="./images/placeholder-person.jpg"
                   alt="placeholder avatar"
                 />
-                <p class="social-proof__author">Lorem Ipsum</p>
+                <p class="social-proof__author">Chuck Norris</p>
               </div>
               <div class="social-proof__content">
                 <p class="social-proof__description">
                   <span>
                     <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
                   </span>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  labore aliquid adipisci vitae mollitia consequatur facere
-                  quibusdam aperiam possimus amet officia atque totam, beatae
-                  nemo.
+                  "Mitt mål var att lära mig självförsvar och jag fick precis
+                  vad jag sökte. Teknikerna är praktiska och tränarna förklarar
+                  tydligt hur de fungerar i verkliga situationer. Jag känner mig
+                  mer säker nu."
                 </p>
               </div>
             </article>
@@ -297,8 +302,8 @@
       </section>
 
       <!-- About -->
-      <section class="">
-        <div class="wrapper">
+      <section class="section">
+        <div class="container">
           <div class="content-block">
             <div class="content-block__text-container">
               <h2 class="section-title">Om vår klubb</h2>
@@ -312,10 +317,10 @@
       </section>
 
       <!-- Where -->
-      <section class="where">
-        <div class="wrapper">
-          <h2 class="section-title">Var vi finns</h2>
-          <div class="where__grid">
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Var vi finns</h2>
+          <div class="grid-layout">
             <a href="./kontakt.html#mariefred" class="card">
               <div class="card__image-wrapper">
                 <img
@@ -377,17 +382,19 @@
             alt="Child crawling on the floor in a room full of karate practitioners listening to theier Sensei"
           />
         </div>
-        <div class="hero__content wrapper">
-          <h2 class="section-title section-title--white hero__title">
-            Varje resa börjar med ett första steg
-          </h2>
-          <a class="cta cta-main" href="./kontakt.html">Kontakta oss</a>
+        <div class="container">
+          <div class="hero__content">
+            <h2 class="section-title section-title--white hero__title">
+              Varje resa börjar med ett första steg
+            </h2>
+            <a class="cta cta-main" href="./kontakt.html">Kontakta oss</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper wrapper">
+      <div class="footer__grid container">
         <div class="footer__column footer__column--about">
           <div class="footer__logo-container">
             <img
