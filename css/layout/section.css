@@ -1,12 +1,17 @@
+/* Section Base */
 .section {
   width: 100%;
+  padding: var(--space-8) 0;
 }
 
+/* Section Title */
 .section__title {
-  font-size: var(--text-xl);
-  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: var(--space-6);
   line-height: var(--leading-tight);
-  margin-bottom: 3rem;
 }
 
 .section__title::after {
@@ -27,14 +32,15 @@
   color: var(--color-surface);
 }
 
-@media (max-width: 1024px) {
-  .section {
-    padding-inline: var(--space-4);
-  }
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .section {
-    padding-inline: var(--space-4);
+  .section-title {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .section-title::after {
+    width: 40px;
+    height: 2px;
   }
 }

@@ -1,0 +1,226 @@
+/* =========================================
+   INSTRUCTORS SECTION
+   ========================================= */
+
+.instructors {
+  padding: var(--space-10) 0;
+  background-color: var(--color-bg-main);
+}
+
+.instructor-profile {
+  margin-bottom: var(--space-10);
+}
+
+.instructor-profile:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   INSTRUCTOR GRID LAYOUT
+   ========================================= */
+
+.instructor-profile__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+/* =========================================
+   SIMPLE BENTO GRID (1 Large + 2 Small)
+   Structure: Left col (1 image) | Right col (2 stacked images)
+   ========================================= */
+
+.instructor-profile__media-bento {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  height: 100%;
+  max-height: 550px;
+  min-height: 400px;
+}
+
+.bento-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  height: 100%;
+}
+
+.bento-col--large {
+  flex: 6;
+  min-width: 0;
+}
+
+.bento-col--stack {
+  flex: 4;
+  min-width: 0;
+}
+
+/* Individual Cells (Images) */
+.bento-cell {
+  flex: 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface);
+  position: relative;
+}
+
+.bento-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+  display: block;
+}
+
+/* .bento-cell:hover .bento-img {
+  transform: scale(1.05);
+} */
+
+/* =========================================
+   TEXT COLUMN
+   ========================================= */
+
+.instructor-profile__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.instructor-profile__name {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0;
+  line-height: var(--leading-tight);
+}
+
+.instructor-profile__title {
+  font-size: var(--text-base);
+  color: var(--color-primary);
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.instructor-profile__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.instructor-profile__bio {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.instructor-profile__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin: var(--space-4) 0 0 0;
+  padding: var(--space-5);
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-md);
+}
+
+.instructor-profile__highlight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-main);
+}
+
+.instructor-profile__highlight i {
+  color: var(--color-primary);
+  font-size: var(--text-base);
+  width: 20px;
+  text-align: center;
+}
+
+/* =========================================
+   REVERSE LAYOUT (Alternating visual flow)
+   ========================================= */
+
+.instructor-profile.reverse .instructor-profile__grid {
+  direction: rtl;
+}
+
+.instructor-profile.reverse .instructor-profile__text {
+  direction: ltr;
+}
+
+.instructor-profile.reverse .instructor-profile__media-bento {
+  direction: ltr;
+}
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 1024px) {
+  .instructor-profile__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .instructor-profile__media-bento {
+    max-height: 400px;
+    min-height: 300px;
+  }
+
+  .instructor-profile.reverse .instructor-profile__grid {
+    direction: ltr;
+  }
+}
+
+/* =========================================
+   RESPONSIVE - MOBILE (Compact Bento)
+   ========================================= */
+
+@media (max-width: 768px) {
+  .instructors {
+    padding: var(--space-8) 0;
+  }
+
+  .instructor-profile__media-bento {
+    flex-direction: column;
+    max-height: none;
+    min-height: auto;
+    gap: var(--space-3);
+  }
+
+  .bento-col--large {
+    flex: none;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  .bento-col--stack {
+    flex: none;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    gap: var(--space-3);
+  }
+
+  .bento-cell {
+    flex: 1;
+    min-height: 150px;
+  }
+
+  .instructor-profile__name {
+    font-size: var(--text-xl);
+  }
+
+  .instructor-profile__highlights {
+    padding: var(--space-4);
+  }
+}
