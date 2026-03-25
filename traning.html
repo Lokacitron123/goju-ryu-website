@@ -73,7 +73,7 @@
     <main>
       <!-- Intro -->
       <section class="hero">
-        <div class="hero__media">
+        <div class="hero__media-container">
           <img
             class="hero__image"
             src="./images/karate.jpg"
@@ -81,38 +81,38 @@
           />
         </div>
 
-        <div class="hero__content wrapper">
-          <div class="hero__title_container">
-            <h1 class="hero__title">Vilken kampart passar dig?</h1>
-            <h2 class="hero__subtitle">Kampkonst & Livsfilosofi</h2>
-          </div>
+        <div class="container">
+          <div class="hero__content wrapper">
+            <div class="hero__title_container">
+              <h1 class="hero__title">Vilken kampart passar dig?</h1>
+              <h2 class="hero__subtitle section__subtitle">
+                Kampkonst & Livsfilosofi
+              </h2>
+            </div>
 
-          <div class="hero__desc-container">
-            <p class="hero__description">
-              Oavsett om du väljer karate eller arnis så är det österländska
-              synsättet, med helheten hos människan i centrum, är det viktiga
-              för oss. Detta återspeglas under hela utbildningen.
-            </p>
-            <p class="hero__description">
-              Nybörjarträningen är utformad så att du kan komma precis som du
-              är. Inga förkunskaper krävs, vare sig styrka eller vighet. Men du
-              kommer snart att märka hur din fysiska förmåga ökar och hur din
-              förmåga till inlärning blir större.
-            </p>
+            <div class="hero__desc-container">
+              <p class="hero__description">
+                Oavsett om du väljer karate eller arnis så är det österländska
+                synsättet, med helheten hos människan i centrum, är det viktiga
+                för oss. Detta återspeglas under hela utbildningen.
+              </p>
+              <p class="hero__description">
+                Nybörjarträningen är utformad så att du kan komma precis som du
+                är. Inga förkunskaper krävs, vare sig styrka eller vighet. Men
+                du kommer snart att märka hur din fysiska förmåga ökar och hur
+                din förmåga till inlärning blir större.
+              </p>
+            </div>
           </div>
-          <!-- <div class="hero__cta-container">
-            <a class="cta cta-main" href="./kontakt.html">Kontakta oss</a>
-            <a class="cta cta-second" href="./om-oss.html">Om oss</a>
-          </div> -->
         </div>
       </section>
 
       <!-- Karate -->
-      <section id="karate" class="split-layout">
-        <div class="wrapper">
-          <h2 class="section-title">Karate</h2>
+      <section id="karate" class="section">
+        <div class="container">
+          <h2 class="section__title">Karate</h2>
 
-          <div class="split-layout__grid">
+          <div class="split-layout">
             <div class="split-layout__media">
               <img
                 class="split-layout__image"
@@ -122,7 +122,7 @@
             </div>
 
             <div class="split-layout__text">
-              <h3 class="split-layout__subtitle">Vår stil heter Goju Ryu</h3>
+              <h3 class="split-layout__title">Vår stil heter Goju Ryu</h3>
 
               <p class="split-layout__description">
                 Karaten uppstod i det lilla öriket Okinawa för drygt 100 år
@@ -194,12 +194,12 @@
       </section>
 
       <!-- Arnis -->
-      <section id="arnis" class="split-layout">
-        <div class="wrapper">
-          <h2 class="section-title">Arnis</h2>
+      <section id="arnis" class="section">
+        <div class="container">
+          <h2 class="section__title">Arnis</h2>
 
-          <div class="split-layout__grid">
-            <div class="split-layout__media reverse">
+          <div class="split-layout">
+            <div class="split-layout__media split-layout--reverse">
               <img
                 class="split-layout__image"
                 src="images/arnis.webp"
@@ -208,7 +208,7 @@
             </div>
 
             <div class="split-layout__text">
-              <h3 class="split-layout__subtitle">
+              <h3 class="split-layout__title">
                 Även kallat Eskrima eller Kali
               </h3>
 
@@ -263,23 +263,25 @@
       </section>
 
       <!-- Yoga -->
-      <section id="yoga" class="split-layout">
-        <div class="wrapper">
-          <h2 class="section-title">Yoga</h2>
+      <section id="yoga" class="section">
+        <div class="container">
+          <h2 class="section__title">Yoga</h2>
 
-          <div class="split-layout__grid">
+          <div class="split-layout">
             <div class="split-layout__media">
               <img
                 class="split-layout__image"
                 src="images/yoga.webp"
-                alt="Karateutövare tränar tillsammans"
+                alt="Karate-medlemmar utövar yoga tillsammans på en gräsmatta en solig dag."
               />
             </div>
 
             <div class="split-layout__text">
-              <h3 class="split-layout__subtitle">Lördagens bästa pass</h3>
+              <h3 class="split-layout__title">Lördagens bästa pass</h3>
 
-              <p class="split-layout__description">
+              <p
+                class="split-layout__description split_layout__description--red"
+              >
                 Från och med i höst kommer yogan att bli ett helt 1-timmes pass
                 på lördagar.
               </p>
@@ -314,7 +316,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper wrapper">
+      <div class="footer__grid container">
         <div class="footer__column footer__column--about">
           <div class="footer__logo-container">
             <img

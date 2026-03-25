@@ -30,15 +30,21 @@
 }
 
 .split-layout__title {
-  font-size: var(--text-lg);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0;
+  line-height: var(--leading-tight);
 }
 
 .split-layout__description {
   font-size: var(--text-base);
   color: var(--color-text-main);
   margin-bottom: 0.5rem;
+}
+
+.split_layout__description--red {
+  color: var(--color-primary);
 }
 
 .split-layout__list {

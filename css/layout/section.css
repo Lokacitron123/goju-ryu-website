@@ -7,7 +7,7 @@
 /* Section Title */
 .section__title {
   font-family: "Raleway", sans-serif;
-  font-size: var(--text-2xl);
+  font-size: var(--text-3xl);
   font-weight: 700;
   color: var(--color-text-main);
   margin-bottom: var(--space-6);
@@ -22,6 +22,14 @@
   background-color: var(--color-primary);
   border-radius: 50%;
   margin-left: 0.25rem;
+}
+
+.section__subtitle {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0;
+  line-height: var(--leading-tight);
 }
 
 .section__title--black {
