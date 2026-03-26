@@ -13,6 +13,7 @@
 @import "./blocks/button.css";
 @import "./blocks/social-proof.css";
 @import "./blocks/content-block.css";
+@import "./blocks/map.css";
 @import "./blocks/footer.css";
 
 /* Layout */
@@ -21,3 +22,4 @@
 @import "./layout/grid-layout.css";
 @import "./layout/split-layout.css";
 @import "./layout/instructor.css";
+@import "./layout/schema.css";

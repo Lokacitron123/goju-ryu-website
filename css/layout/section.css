@@ -1,7 +1,8 @@
 /* Section Base */
 .section {
   width: 100%;
-  padding: var(--space-8) 0;
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
 }
 
 /* Section Title */
@@ -10,7 +11,7 @@
   font-size: var(--text-3xl);
   font-weight: 700;
   color: var(--color-text-main);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-8);
   line-height: var(--leading-tight);
 }
 
