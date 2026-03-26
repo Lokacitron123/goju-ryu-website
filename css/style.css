@@ -12,8 +12,9 @@
 @import "./blocks/carousel.css";
 @import "./blocks/button.css";
 @import "./blocks/social-proof.css";
-@import "./blocks/content-block.css";
+@import "./blocks/banner.css";
 @import "./blocks/map.css";
+@import "./blocks/contactForm.css";
 @import "./blocks/footer.css";
 
 /* Layout */

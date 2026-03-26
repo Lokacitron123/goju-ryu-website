@@ -21,9 +21,10 @@
 }
 
 .social-proof__author {
-  font-weight: 600;
-  font-size: var(--text-sm);
+  font-size: var(--text-2xl);
+  font-weight: 700;
   margin: 0;
+  line-height: var(--leading-tight);
 }
 
 .social-proof__content {
@@ -32,8 +33,9 @@
 
 .social-proof__description {
   margin: 0;
-  line-height: 1.5;
   font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  margin: 0;
 }
 
 .social-proof__description i {
